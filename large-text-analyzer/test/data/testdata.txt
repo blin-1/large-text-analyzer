@@ -1,0 +1,9 @@
+Modules in JavaScript helps to modularize the code by partitioning the entire code into various modules which can be imported from anywhere and thus used. It makes it easy to reuse a piece of code, maintain code and debug code. Also, it prevents many problems linked with using global variables and functions. Earlier the modules were implemented through various external libraries and frameworks but with ECMAScript2015, it was made an implicit part of the JavaScript constructs.
+1
+
+Exporting Values: JavaScript because of its multi-paradigm nature allows us to export functions, objects, classes and primitive values using the keyword export.
+
+
+The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects.
+
+It is typically used after having started multiple asynchronous tasks to run concurrently and having created promises for their results, so that one can wait for all the tasks being finished.

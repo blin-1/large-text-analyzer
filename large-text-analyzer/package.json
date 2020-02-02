@@ -1,0 +1,19 @@
+{
+  "name": "word-counter",
+  "version": "1.0.0",
+  "description": "Counts unique words in a very large file",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1",
+    "start": "node --experimental-modules index.mjs"
+  },
+  "keywords": [
+    "words",
+    "count",
+    "counter",
+    "text",
+    "analyzer"
+  ],
+  "author": "YG",
+  "license": "ISC"
+}
