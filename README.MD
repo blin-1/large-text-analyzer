@@ -6,6 +6,13 @@ This ES6 module analyzes the vocabulary of a possibly very large text, that cann
 It also demonstrates processing file streams one chunk at a time
 </p>
 
+
+<p>
+<bold>
+IMPORTANT - This uses ES6 Module Loader - You will need a recent version of node and below 13 run npm start with --node-experimental-features switch 
+</bold>  
+</p>
+
 <br>
 It produces the map of words and frequency of their use in the input text file
 
