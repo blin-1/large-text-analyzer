@@ -12,8 +12,9 @@
     "count",
     "counter",
     "text",
-    "analyzer"
+    "analyzer",
+    "word frequency"
   ],
-  "author": "YG",
+  "author": "Yuri Gridin",
   "license": "MIT"
 }
