@@ -1,5 +1,5 @@
 {
-  "name": "word-counter",
+  "name": "large-text-analyzer",
   "version": "1.0.0",
   "description": "Counts unique words in a very large file",
   "main": "index.mjs",
