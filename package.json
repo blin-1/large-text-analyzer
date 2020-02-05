@@ -1,11 +1,11 @@
 {
   "name": "large-text-analyzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Counts unique words in a very large file",
-  "main": "index.js",
+  "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 1",
-    "start": "node --experimental-modules index.mjs"
+    "start": "node --experimental-modules ./modules/large-text-analyzer.mjs"
   },
       "repository": {
       "type": "git",
