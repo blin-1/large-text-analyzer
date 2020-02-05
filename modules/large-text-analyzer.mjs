@@ -1,8 +1,8 @@
 import fs from 'fs';
 
-process.on('unhandledRejection', (reason) => {
+/* process.on('unhandledRejection', (reason) => {
     console.log('LargeTextAnalyzer ERROR: ' + reason);
-});
+}); */
 
 class LargeTextAnalyzer {
 

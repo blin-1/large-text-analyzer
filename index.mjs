@@ -7,4 +7,3 @@ async function count (fileName) {
 	console.log(`Vocabulary consists of ${wordMap.size} words`)
 	console.log(wordMap);
 }
- 
