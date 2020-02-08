@@ -1,9 +1,14 @@
-Modules in JavaScript helps to modularize the code by partitioning the entire code into various modules which can be imported from anywhere and thus used. It makes it easy to reuse a piece of code, maintain code and debug code. Also, it prevents many problems linked with using global variables and functions. Earlier the modules were implemented through various external libraries and frameworks but with ECMAScript2015, it was made an implicit part of the JavaScript constructs.
-1
+Я хочу писать по-русски. Включить латиницу
 
-Exporting Values: JavaScript because of its multi-paradigm nature allows us to export functions, objects, classes and primitive values using the keyword export.
+Modules in JavaScript 23
+Frank Herbert’s classic science fiction novel will live for generations as a masterpiece of creative imagination.
 
+In this game you can bring to life the forbidding alien planet and the swirling intrigues of all the book’s major characters.
 
-The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects.
+Dune - the very name conjures up desolation. Desert sandscapes cover most of the planet surface, broken only by giant rock ridges. Giant worms a quarter mile long live beneath the sand and attack any who linger on it. Human life exists in a few scattered places where precious water is available, but even those settlements are buffeted by terrifying coriolis storms.
 
-It is typically used after having started multiple asynchronous tasks to run concurrently and having created promises for their results, so that one can wait for all the tasks being finished.
+Yet the planet is crucial to the destiny of a galactic empire. Because only on Dune! spice can be harvested.
+
+Spice is the key to interstellar travel. Only by ingesting the addictive drug can the Guild Steersman continue to experience visions of the future, enabling them to plot a safe path through hyperspace. Spice is also a geriatric medicine which prolongs life. Only by assuring a stable supply of it throughout the galaxy can any Emperor avoid civil revolt. With spice, in short, one can buy whatever he wants.
+
+Powerful forces struggle for control of Dune. Imperial troops, aristocratic families, Guildsmen, a secret sisterhood, and the nomadic native Fremen all vie for power on the planet.

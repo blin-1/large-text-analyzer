@@ -15,13 +15,18 @@ Example Usage
 <pre>
 import lta from 'large-text-analyzer'
 
+// Optionally set the word delimiters:
+// (Default is /\s|[0-9\-]/ but that doesn't begin to touch unicode of course)    
+// lta.delimiters = /\s/             
+
 count('./test/data/testdata.txt')
 
 async function count (fileName) {
-	let wordMap = await lta.getWordMap(fileName);
-	console.log(`Vocabulary consists of ${wordMap.size} words`)
-	console.log(wordMap);
+    let wordMap = await lta.getWordMap(fileName);
+    console.log(`Vocabulary consists of ${wordMap.size} words`)
+    console.log(wordMap);
 }
+
 </pre>
 
 <br>
@@ -38,4 +43,5 @@ Map {
   <br>
   'after' => 1
   <br>
+  etc...
 }

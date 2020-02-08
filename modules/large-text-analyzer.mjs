@@ -1,10 +1,15 @@
 import fs from 'fs';
 
-/* process.on('unhandledRejection', (reason) => {
-    console.log('LargeTextAnalyzer ERROR: ' + reason);
-}); */
-
 class LargeTextAnalyzer {
+
+	static delimiters = /\s|[^a-zA-Z]|[0-9]/
+
+	/**
+	 * @param {any} delimiters
+	 */
+	set delimiters (delimiters) {
+         this.delimiters = delimiters;
+    }
 
 	static getWordMap (fileName) {
 		
@@ -12,22 +17,18 @@ class LargeTextAnalyzer {
 		return new Promise((resolve) => {
 				let stream = fs.createReadStream(fileName)
 				stream.on("readable", () => {
-							let char, word = '', delimiter = /\s|[^a-zA-Z]/ 	// anything but a letter
-							while (char = stream.read(1)) {
-								if (delimiter.test(char)){
+							let character, word = ''	
+							while (character = stream.read(1)) {
+								if (this.delimiters.test(character)){
 									if (word){
 										word = word.toLowerCase()
 										let count = map.get(word)
-										if (count){
-											count++
-										}else{
-											count = 1
-										}
+										count = count? ++count : 1
 										map.set(word,count)
 										word = ''
 									}
 								}else {
-									word += char
+									word += character
 								}
 							}
 				})

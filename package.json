@@ -7,9 +7,9 @@
     "test": "echo \"Error: no tests specified\" && exit 1",
     "start": "node --experimental-modules ./modules/large-text-analyzer.mjs"
   },
-      "repository": {
-      "type": "git",
-      "url": "https://github.com/blin-1/large-text-analyzer.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blin-1/large-text-analyzer.git"
   },
   "keywords": [
     "words",
