@@ -1,7 +1,7 @@
 {
   "name": "large-text-analyzer",
   "version": "1.0.5",
-  "description": "Counts unique words in a very large file",
+  "description": "Asynchronously breaks file stream into words, and invokes user-supplied function on each word",
   "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 1",
@@ -12,11 +12,16 @@
     "url": "https://github.com/blin-1/large-text-analyzer.git"
   },
   "keywords": [
+    "ES6",
+    "modules",
+    "stream",
+    "async",
     "words",
-    "count",
     "counter",
     "text",
+    "text processor",
     "analyzer",
+    "vocabulary",
     "word frequency"
   ],
   "author": "Yuri Gridin",
