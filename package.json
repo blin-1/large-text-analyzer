@@ -1,6 +1,6 @@
 {
   "name": "large-text-analyzer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Counts unique words in a very large file",
   "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
