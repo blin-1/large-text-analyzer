@@ -12,8 +12,8 @@ IMPORTANT - This uses ES6 Module Loader - You will need a very recent version of
 Example of usage
 </bold>
 </p>
-<pre>
-import lta from './modules/large-text-analyzer.mjs'
+<pre><code>
+import lta from 'large-text-analyzer'
 
 // OPTIONALLY override the word delimiters - this RegEx is the default one:
 
@@ -28,23 +28,23 @@ lta.delimiters = /\s|[^a-zA-Z]|[0-9]/
 // word occurences 
 
 lta.processWord = function (word){           		
-        word = word.toLowerCase()		
-		let count = this.map.get(word)
-		count = count? ++count : 1
-		this.map.set(word,count)
+      word = word.toLowerCase()		
+		  let count = this.map.get(word)
+		  count = count? ++count : 1
+		  this.map.set(word,count)
 }
 
 // Define async block:
 async function processFile (fileName) {
-        let vocabulary = await lta.processWords(fileName);
-        console.log(`Vocabulary consists of ${vocabulary.size} words`)
+      let vocabulary = await lta.processWords(fileName);
+      console.log(`Vocabulary consists of ${vocabulary.size} words`)
 	    console.log(vocabulary);
 }
 
 // And execute it.
 processFile('./test/data/testdata.txt')
 
-</pre>
+</code></pre>
 
 <br>
 That will produce the map of words and frequency of their use in the input text file
