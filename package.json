@@ -1,7 +1,7 @@
 {
   "name": "large-text-analyzer",
-  "version": "1.0.6",
-  "description": "Asynchronously breaks file stream into words, and invokes user-supplied function on each word",
+  "version": "1.0.7",
+  "description": "Asynchronously breaks file stream into chunks, and invokes user-supplied function on each chunk",
   "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 1",
@@ -15,6 +15,7 @@
     "ES6",
     "modules",
     "stream",
+    "stream slicer",
     "async",
     "words",
     "counter",

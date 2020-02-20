@@ -9,7 +9,7 @@ IMPORTANT - This uses ES6 Module Loader - You will need a very recent version of
 
 <p>
 <bold>
-Example Usage
+Example of usage
 </bold>
 </p>
 <pre>
@@ -19,12 +19,16 @@ import lta from './modules/large-text-analyzer.mjs'
 
 lta.delimiters = /\s|[^a-zA-Z]|[0-9]/ 
 
-// OPTIONALLY override the processWord(word) function to be executed for each word - 
-// this here is the default - counts unique word occurences 
-// NOTE "this.map" - this is the result map, that gets returned at the end of the stream
+// OPTIONALLY override the processWord(word) function 
+// to be executed for each word.
+// NOTE "this.map" - this is the result map, 
+// that gets returned at the end of the stream.
+// It can be used to store all kinds of results
+// this here is the default - counts unique 
+// word occurences 
 
 lta.processWord = function (word){           		
-		word = word.toLowerCase()		
+        word = word.toLowerCase()		
 		let count = this.map.get(word)
 		count = count? ++count : 1
 		this.map.set(word,count)
@@ -32,9 +36,9 @@ lta.processWord = function (word){
 
 // Define async block:
 async function processFile (fileName) {
-	let vocabulary = await lta.processWords(fileName);
-	console.log(`Vocabulary consists of ${vocabulary.size} words`)
-	console.log(vocabulary);
+        let vocabulary = await lta.processWords(fileName);
+        console.log(`Vocabulary consists of ${vocabulary.size} words`)
+	    console.log(vocabulary);
 }
 
 // And execute it.
@@ -43,7 +47,7 @@ processFile('./test/data/testdata.txt')
 </pre>
 
 <br>
-It produces the map of words and frequency of their use in the input text file
+That will produce the map of words and frequency of their use in the input text file
 
 <br>
 SAMPLE OUTPUT: 
