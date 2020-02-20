@@ -1,6 +1,6 @@
 {
   "name": "large-text-analyzer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Asynchronously breaks file stream into chunks, and invokes user-supplied function on each chunk",
   "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
@@ -15,13 +15,12 @@
     "ES6",
     "modules",
     "stream",
-    "stream slicer",
+    "stream slice",
     "async",
     "words",
     "counter",
     "text",
     "text processor",
-    "analyzer",
     "vocabulary",
     "word frequency"
   ],
