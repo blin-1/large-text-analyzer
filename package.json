@@ -1,6 +1,6 @@
 {
   "name": "large-text-analyzer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Asynchronously breaks file stream into chunks, and invokes user-supplied function on each chunk",
   "main": "./modules/large-text-analyzer.mjs",
   "scripts": {
@@ -13,16 +13,17 @@
   },
   "keywords": [
     "ES6",
-    "modules",
+    "module",
     "stream",
-    "stream slice",
+    "slice",
+    "slicer",
+    "split",
     "async",
     "words",
-    "counter",
+    "word",
     "text",
-    "text processor",
-    "vocabulary",
-    "word frequency"
+    "processor",
+    "vocabulary"
   ],
   "author": "Yuri Gridin",
   "license": "MIT"
