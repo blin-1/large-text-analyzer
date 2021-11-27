@@ -36,7 +36,7 @@ lta.processWord = function (word){
 
 // Define async block:
 async function processFile (fileName) {
-      let vocabulary = await lta.processWords(fileName);
+      let vocabulary = await lta.processWord(fileName);
       console.log(`Vocabulary consists of ${vocabulary.size} words`)
 	    console.log(vocabulary);
 }
